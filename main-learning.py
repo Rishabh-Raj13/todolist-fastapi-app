@@ -3,7 +3,7 @@ from typing import List, Optional
 from fastapi import FastAPI,HTTPException
 from pydantic import BaseModel, Field
 
-api = FastAPI()
+app = FastAPI()
 
 class Priority(IntEnum):
     LOW=3
