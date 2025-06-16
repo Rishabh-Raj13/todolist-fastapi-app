@@ -83,3 +83,7 @@ def delete_todo(todo_id: int):
             deleted_todo=allTodos.pop(index)
             return deleted_todo
     raise HTTPException(status_code=404, detail='Todo Not Found')
+
+@api.get("/")
+def root():
+    return {"message": "FastAPI is running on EC2!"}
